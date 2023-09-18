@@ -1,5 +1,6 @@
 #include <iostream>
-
+#include <stdlib.h>
+#include <time.h>
 using namespace std;
 /*
 CSC 134
@@ -9,16 +10,27 @@ The player rolls two 6-sided dice (abbreviated 2d6.)
 7 or 11 -> instant win
 2, 3, or 12 -> instant loss
 */
-
+int roll() {
+    int roll = rand() %6 + 1;
+    return roll;
+}
 int main()
 {
     cout << "Lets play Craps!" << endl;
     int die1, die2, total;
+
     // roll 2d6
-    cout << "What are the two rolls?" << endl;
-    cin >> die1 >> die2;
+
+    int seed = time(0);
+    cout << "Today's lucky number is: " << seed << endl;
+    srand(seed);
+    die1 = roll();
+    die2 = roll();
     total = die1 + die2;
-    cout << "You rolled: " << total << endl;
+
+    cout << "You rolled: ";
+    cout << die1 << " + " << die2;
+    cout << " = " << total << endl;
     // do the if else for 7 or 11 and 2,3,12.
 
     if (total == 7 || total == 11){
@@ -28,6 +40,6 @@ int main()
         cout << "You lose!" << endl;
     }
     else {
-        cout << "You did not win or lose" << endl;
+        cout << "You did not win or lose." << endl;
     }
 }

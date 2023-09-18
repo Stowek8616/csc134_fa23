@@ -1,4 +1,6 @@
 # depslib dependency file v1.0
-1695050494 source:c:\users\stowek8616\documents\github\csc134_fa23\m3t2_stowe\main.cpp
+1695051947 source:c:\users\stowek8616\documents\github\csc134_fa23\m3t2_stowe\main.cpp
 	<iostream>
+	<stdlib.h>
+	<time.h>
 
