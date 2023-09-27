@@ -27,7 +27,7 @@ int main()
     else if (num_grade >= D_GRADE) {
         letter_grade = "a D";
     }
-    else if (num_grade < 60) {
+    else {
         letter_grade = "an F";
     }
     cout << "A grade of " << num_grade;
