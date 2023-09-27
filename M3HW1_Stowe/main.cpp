@@ -3,16 +3,27 @@
 #include <time.h>
 using namespace std;
 
+/*
+Kyle Stowe
+CSC 134
+M3HW1
+Q4 Math Practice
+*/
 
 int main()
 {
-    int number, number2;
-    srand((unsigned)time(0));
-    number = rand() %9;
+    int number, number2, sum, answer;
+    srand(time(NULL));
+    number = (rand() %9);
+    number2 = (rand() %9);
+    sum = number + number2;
+    cout << "What is " << number << " + " << number2 <<"?" << endl;
+    cin >> answer;
 
-    srand((unsigned)time(0));
-    number2 = rand() %9;
-
-    cout << number << number2 << endl;
-    return 0;
+    if (answer == sum) {
+        cout << "Correct. Good job!" << endl;
+    }
+    else {
+        cout << "Wrong, the answer is " << sum << ". Try again." << endl;
+    }
 }
