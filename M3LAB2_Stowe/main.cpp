@@ -8,7 +8,7 @@ string choice2;
 
     cout << "You're trapped in a room with 3 doors. Behind the first door is a bloodthirsty wizard. Behind the second door is an army of angry roman soldiers. Behind the third door is a great 3 headed lion." << endl;
     cout << "Two doors will lead to your death, one will lead to your freedom. Make your choice." << endl;
-    cout << "Type 1, 2 or 3." << endl;
+    cout << "Type 1, 2, 3, or 4 if you don't want to go though any door." << endl;
     cin >> choice;
 
 if (1 == choice) {
