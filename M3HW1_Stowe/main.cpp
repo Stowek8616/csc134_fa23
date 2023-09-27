@@ -14,8 +14,8 @@ int main()
 {
     int number, number2, sum, answer;
     srand(time(NULL));
-    number = (rand() %9);
-    number2 = (rand() %9);
+    number = (rand() %10);
+    number2 = (rand() %10);
     sum = number + number2;
     cout << "What is " << number << " + " << number2 <<"?" << endl;
     cin >> answer;
